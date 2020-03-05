@@ -1,7 +1,8 @@
 <?php 
-    $footer_layout = '3,3,3,3';
+    $footer_layout = sanitize_text_field(get_theme_mod('_themename_footer_layout', '3,3,3,3'));
+    $footer_layout = preg_replace('/\s+/', '', $footer_layout);
     $columns = explode(',', $footer_layout);
-    $footer_bg = 'dark';
+    $footer_bg = get_theme_mod('_themename_footer_bg', 'dark');
     $widgeets_active = false;
     foreach($columns as $i => $column){
         if(is_active_sidebar('footer-sidebar-'.($i +1))){ 
@@ -10,7 +11,7 @@
     }
 ?>
 <?php if($widgeets_active){ ?>
-    <div class="c-footer c-footer--<?php echo $footer_bg; ?>">
+    <div class="c-footer c-footer--<?php echo _themename_sanitize_footer_bg($footer_bg); ?>">
         <div class="o-container">
             <div class="o-row">
                 <?php foreach($columns as $i => $column){ ?>

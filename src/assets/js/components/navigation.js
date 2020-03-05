@@ -11,7 +11,7 @@
 
 jQuery('.c-navigation').on('mouseenter', '.menu-item-has-children', (e) => {
     if(!jQuery(e.currentTarget).parents('.sub-menu').length){
-        $('.menu > .menu-item.open').find('> a > .menu-button').trigger('click');
+        jQuery('.menu > .menu-item.open').find('> a > .menu-button').trigger('click');
     }
     jQuery(e.currentTarget).addClass('open');
 }).on('mouseleave', '.menu-item-has-children', (e) => {

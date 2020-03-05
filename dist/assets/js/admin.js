@@ -104,7 +104,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Applications/XAMPP/xamppfiles/htdocs/udemy/wp-content/themes/firsttheme/src/assets/js/admin.js */"./src/assets/js/admin.js");
+module.exports = __webpack_require__(/*! /Users/eloy.viteri/Sites/udemy/wp-content/themes/firsttheme/src/assets/js/admin.js */"./src/assets/js/admin.js");
 
 
 /***/ })
