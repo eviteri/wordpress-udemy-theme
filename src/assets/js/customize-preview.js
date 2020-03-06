@@ -29,3 +29,14 @@ wp.customize( '_themename_accent_colour', (value) => {
         jQuery('#_themename-stylesheet-inline-css').html(inline_css);
     } )
 })
+
+wp.customize('_themename_display_author_info', (value) => {
+    value.bind( (to) => {
+        if(to){
+            jQuery('.c-post-author').show();
+        }else{
+            jQuery('.c-post-author').hide();
+        }
+        
+    })
+});

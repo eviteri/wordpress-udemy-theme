@@ -44,3 +44,11 @@ function _themename_delete_post(){
     }
     
 }
+
+function _themename_meta($id, $key, $default){
+    $value = get_post_meta($id, $key, true);
+    if(!$value && $default){
+        return $default;
+    }
+    return $value;
+}
