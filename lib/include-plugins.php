@@ -12,6 +12,15 @@ function _themename_register_required_plugins(){
             'version' => '1.0.0',
             'force_activation' => false, //set this allwasy to false
             'force_deactivation' => false //set this allwasy to false
+        ),
+        array(
+            'name' => '_themename shortcodes',
+            'slug' => '_themename-shortcodes',
+            'source' => get_template_directory_uri(). '/lib,plugins/firsttheme-shortcodes.zip',
+            'required' => true,
+            'version' => '1.0.0',
+            'force_activation' => false, //set this allwasy to false
+            'force_deactivation' => false //set this allwasy to false
         )
     );
 
