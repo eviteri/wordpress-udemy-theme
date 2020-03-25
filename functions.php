@@ -11,6 +11,7 @@ require_once('lib/images.php');
 require_once('lib/portfolio.php');
 require_once('lib/delete-post.php');
 require_once('lib/most-recent-widget.php');
+require_once('lib/acf-blocks.php');
 
 
 
